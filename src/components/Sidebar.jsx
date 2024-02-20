@@ -32,7 +32,7 @@ const Sidebar = () => {
         ))}
 
         <div
-          className="flex gap-3 items-center p-3 cursor-pointer text-rose-500"
+          className="flex gap-3 items-center p-3 cursor-pointer text-rose-600"
           onClick={logout}
         >
           <MdLogout />
