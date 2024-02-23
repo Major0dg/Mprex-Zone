@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ACTION_BUTTONS, SIDEBAR_LINKS } from "../lib/constants";
+import {
+  USER_ACTION_BUTTONS,
+  USER_SIDEBAR_LINKS,
+} from "../../../lib/constants";
 import SidebarItem from "./SidebarItem";
 import { MdLogout } from "react-icons/md";
 
@@ -20,14 +23,14 @@ const Sidebar = () => {
       {/* routes */}
 
       <div className="flex flex-col space-y-3 mt-10 w-full">
-        {SIDEBAR_LINKS.map((item) => (
+        {USER_SIDEBAR_LINKS.map((item) => (
           <SidebarItem key={item.id} item={item} />
         ))}
       </div>
 
       {/* cta */}
       <div className="flex flex-col space-y-3 mt-auto w-full">
-        {ACTION_BUTTONS.map((item) => (
+        {USER_ACTION_BUTTONS.map((item) => (
           <SidebarItem key={item.id} item={item} />
         ))}
 

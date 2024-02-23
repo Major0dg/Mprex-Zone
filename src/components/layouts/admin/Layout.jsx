@@ -2,6 +2,7 @@ import React from "react";
 
 import { Outlet } from "react-router-dom";
 import Sidebar from "./Sidebar";
+import Header from "./Header";
 
 const Layout = () => {
   return (
@@ -9,9 +10,11 @@ const Layout = () => {
       <div>
         <Sidebar />
       </div>
-      <div className="p-4 w-full">
-        <div>{/* <Header /> */}</div>
-        <div>
+      <div className="w-full flex flex-col min-h-[100vh]">
+        <div className=" border border-b shadow-sm px-4 py-6">
+          <Header />
+        </div>
+        <div className="h-full p-4 ">
           <Outlet />
         </div>
       </div>
